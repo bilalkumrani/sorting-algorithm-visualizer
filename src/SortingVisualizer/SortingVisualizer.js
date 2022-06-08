@@ -1,8 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { getbubbleSortAnime } from "./sortingAlogrithms";
-const ANIMATION_SPEED_MS = 10;
-const NUMBER_OF_ARRAY_BARS = 80;
+const ANIMATION_SPEED_MS = 100;
 const PRIMARY_COLOR = "turquoise";
 const SECONDARY_COLOR = "red";
 
@@ -18,7 +17,7 @@ const Sortingvisualizer = () => {
 
   const resetArray = () => {
     setState([]);
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 10; i++) {
       setState((value) => {
         return [...value, Math.floor(Math.random() * 100)];
       });
